@@ -3,6 +3,8 @@
 
 # Log file
 *.log
+logs/
+*.log.*
 
 # BlueJ files
 *.ctxt
@@ -22,3 +24,48 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.settings/
+.classpath
+.project
+.factorypath
+.vscode/
+*.swp
+*.swo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Quarkus
+.quarkus/
+quarkus-app/
+quarkus-dev/
+quarkus-prod/
+
+# Database
+*.db
+*.sqlite
+*.h2.db
+
+# System Files
+.DS_Store
+Thumbs.db

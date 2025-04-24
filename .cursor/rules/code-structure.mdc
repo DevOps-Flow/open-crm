@@ -1,0 +1,29 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Estrutura do Código Fonte
+
+## Organização dos Diretórios
+
+### Código Principal (`src/main/`)
+- `java/` - Classes Java do projeto
+- `resources/` - Arquivos de configuração e recursos
+- `docker/` - Arquivos relacionados à containerização
+
+### Testes (`src/test/`)
+- Contém os testes automatizados do projeto
+
+## Convenções de Código
+- O projeto segue as convenções de código do Quarkus
+- Utilize nomes descritivos em português para classes e métodos
+- Mantenha a organização em pacotes por funcionalidade
+- Documente as APIs usando Javadoc
+
+## Boas Práticas
+- Siga os princípios SOLID
+- Implemente testes unitários para novas funcionalidades
+- Mantenha a cobertura de testes adequada
+- Use injeção de dependência do Spring
+

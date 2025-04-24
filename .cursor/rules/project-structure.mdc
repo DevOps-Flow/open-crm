@@ -1,0 +1,20 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Estrutura do Projeto Open-CRM
+
+Este é um projeto Java Spring Boot que implementa um sistema CRM (Customer Relationship Management) de código aberto.
+
+## Arquivos Principais
+- [pom.xml](mdc:open-crm/pom.xml) - Arquivo de configuração Maven com todas as dependências do projeto
+- [README.md](mdc:open-crm/README.md) - Documentação principal do projeto
+- [mvnw](mdc:open-crm/mvnw) e [mvnw.cmd](mdc:open-crm/mvnw.cmd) - Scripts Maven Wrapper para Linux/Mac e Windows
+
+## Diretórios Importantes
+- `src/` - Código fonte da aplicação
+- `target/` - Arquivos compilados e gerados (não versionado)
+- `.mvn/` - Configurações do Maven Wrapper
+- `otel-config.yaml/` - Configurações do OpenTelemetry
+

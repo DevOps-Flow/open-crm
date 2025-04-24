@@ -1,0 +1,34 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Guia de Desenvolvimento
+
+## Configuração do Ambiente
+1. Instale Java 17 ou superior
+2. Configure sua IDE (recomendado IntelliJ IDEA)
+3. Clone o repositório
+4. Execute `./mvnw clean install` para instalar dependências
+
+## Fluxo de Desenvolvimento
+1. Crie uma branch para sua feature: `feature/nome-da-feature`
+2. Desenvolva seguindo as convenções do projeto
+3. Execute os testes: `./mvnw test`
+4. Faça commit seguindo o padrão convencional:
+   - feat: nova funcionalidade
+   - fix: correção de bug
+   - docs: documentação
+   - refactor: refatoração
+   - test: testes
+
+## Execução Local
+1. Configure as variáveis de ambiente necessárias
+2. Execute: `./mvnw spring-boot:run`
+3. Acesse: http://localhost:8080
+
+## Observabilidade
+- Logs são gerenciados pelo Logback
+- Métricas são coletadas pelo OpenTelemetry
+- Configure o arquivo `otel-config.yaml` para exportação de telemetria
+

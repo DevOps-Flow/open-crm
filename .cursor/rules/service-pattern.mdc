@@ -1,0 +1,23 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Padrão de Serviços
+
+## Estrutura de Serviços
+O projeto segue o padrão de inversão de controle (IoC) para serviços, onde:
+- Interfaces são definidas em `service/`
+- Implementações são localizadas em `service/impl/`
+
+## Exemplos de Implementação
+- Cliente: [ClienteService.java](mdc:open-crm/src/main/java/com/devopsflow/opencrm/service/ClienteService.java) → [ClienteServiceImpl.java](mdc:open-crm/src/main/java/com/devopsflow/opencrm/service/impl/ClienteServiceImpl.java)
+- Endereço: [EnderecoService.java](mdc:open-crm/src/main/java/com/devopsflow/opencrm/service/EnderecoService.java) → [EnderecoServiceImpl.java](mdc:open-crm/src/main/java/com/devopsflow/opencrm/service/impl/EnderecoServiceImpl.java)
+- Ordem de Serviço: [OrdemServicoService.java](mdc:open-crm/src/main/java/com/devopsflow/opencrm/service/OrdemServicoService.java) → [OrdemServicoServiceImpl.java](mdc:open-crm/src/main/java/com/devopsflow/opencrm/service/impl/OrdemServicoServiceImpl.java)
+
+## Convenções
+1. Interfaces definem apenas os contratos dos serviços
+2. Implementações são anotadas com `@ApplicationScoped`
+3. Métodos de persistência são anotados com `@Transactional`
+4. Injeção de dependência é feita via construtor
+5. Exceções de negócio usam `WebApplicationException`

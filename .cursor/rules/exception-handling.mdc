@@ -1,0 +1,24 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Tratamento de Exceções
+
+## Padrão de Exceções nos Serviços
+Os serviços utilizam `WebApplicationException` para erros de negócio:
+
+```java
+throw new WebApplicationException("Mensagem de erro", Response.Status.NOT_FOUND);
+```
+
+## Códigos HTTP
+- `404 NOT_FOUND`: Quando um recurso não é encontrado
+- `400 BAD_REQUEST`: Para validações de negócio
+- `500 INTERNAL_SERVER_ERROR`: Erros internos inesperados
+
+## Exemplos de Implementação
+Ver implementações em:
+- [ClienteServiceImpl.java](mdc:open-crm/src/main/java/com/devopsflow/opencrm/service/impl/ClienteServiceImpl.java)
+- [EnderecoServiceImpl.java](mdc:open-crm/src/main/java/com/devopsflow/opencrm/service/impl/EnderecoServiceImpl.java)
+- [OrdemServicoServiceImpl.java](mdc:open-crm/src/main/java/com/devopsflow/opencrm/service/impl/OrdemServicoServiceImpl.java)
